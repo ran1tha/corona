@@ -35,6 +35,8 @@ The total population is believed to be a constant as epidemics tend to have shor
   The reduced people, in this case, are the people who have recovered from or perished due to the disease. 
   Note that *S(t), I(t), R(t)* vary with time.
   
+  
+  
   #### *S(t)*
   
  In the case of an epidemic, the susceptible number of people drops at any given time. This is due to people falling sick. For the disease to spread a person from the infected group *I(t)* must come in contact with a person from the susceptible group *S(t)*. Thus the rate of susceptible people falling sick is proportional to *I(t)* and *S(t)*. It is also proportional to some proportionality constant   ![](images/beta.png) called the transmission coefficient. Now the rate of change of *S(t)* is given by, <br><br>
@@ -43,12 +45,14 @@ The total population is believed to be a constant as epidemics tend to have shor
  ![](images/s2.png) <br><br>
  
  
+ 
   #### *I(t)*
   
   In an epidemic, the number of infectives rise up exponentially and then rises linearly for a while before coming to a maximum while exhibiting logarithmic rise. Afterwards, the infectives decay to zero. Refer the image at the bottom of the section. The rate of change of *I(t)* is governed by two factors, the rate of susceptibles turning into infectives and the rate of infectives turning into recovered or simply, dying. 
   The rate of infectives turning into reduced group solely depends on the number of infectives and hence it is proportional to *I(t)* along with a proportionality constant ![a](images/gamma.png) called the recovery rate. Now the rate of change of infectives is given by,
   
   ![a](images/i.png)
+  
   
   
   #### *R(t)*
@@ -91,9 +95,9 @@ The total infective and reduced population in Sri Lanka is negligible compared t
 
 Now the equation reduces to,
 
- ![a](images/i2.png)
+ ![a](images/i1.png)
  
- ![a](images/i3.png)
+ ![a](images/i2.png)
  
  It is visible that the rate of change of infectives at any given moment is proportional to the present number of infectives.
  This discussion is continued after the following section.
