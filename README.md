@@ -249,7 +249,7 @@ If a person infected with COVID-19 is exposed to the community (susceptibles) fo
 
 **Opportunity**
 
-Opportunity is the likelihood of an infected person to come in contact with a susceptible person. It is good to practice self-isolation to keep this quantity low. Also, a lockdown can decrease this quantity drastically.
+Opportunity is the likelihood of an infected person to come in contact with a susceptible person. It is good to practice social distancing to keep this quantity low. Also, a "lockdown" can decrease this quantity drastically.
 
 
 **Transmission probability**
@@ -297,7 +297,7 @@ This inflexion point can be found by dividing consecutive gradient values. As th
 [3] : Modelling Epidemics <br>
         https://jvanderw.une.edu.au/L5_ModellingEpidemics1.pdf
         
-[4] : Exponential growth and epidemics
+[4] : Exponential growth and epidemics <br>
         https://www.youtube.com/watch?v=Kas0tIxDvrg
         
 [5] : Epidemiology Unit ,Ministry of Health & Indigenous Medical Services, Sri Lanka <br>
