@@ -137,31 +137,86 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ### Plot of total confirmed cases in Sri Lanka
  
+ <br>
+ <br>
+ 
+ ![](data/total.png)
+ <br>
+ <br>
+ <br>
+ <br>
+ 
  ### Plot of active cases in Sri Lanka
+ 
+ <br>
+ <br>
+ 
+ ![](data/active.png)
+ <br>
+ <br>
+ <br>
+ <br>
  
  ### Plot of new cases in Sri Lanka
  
+ <br>
+ <br>
+ 
+ ![](data/new.png)
+ <br>
+ <br>
+ <br>
+ <br>
+ 
  ###  Plot of New cases vs Active cases with best fit curve
  
- ![a](images/bmg.png) = **xxx**
+ <br>
+ <br>
+ 
+ ![](data/I.png)
+ 
+ #### ![a](images/bmg.png) = **0.390476**
+ 
+ <br>
+ <br>
+ <br>
+ <br>
  
  ### Plot of recovered cases in Sri Lanka
  
+ <br>
+ <br>
+ 
+ ![](data/rec.png)
+ <br>
+ <br>
+ <br>
+ <br>
+ 
  ### Plot of ![a](images/rdot.png) vs *I(t)* with best fit curve
  
-  ![a](images/gamma.png) = **xxx**
-  
+ <br>
+ <br>
+ 
+ ![](data/r.png)
+ 
+ #### ![a](images/gamma.png) = **0.000000**
+ 
+ <br>
+ <br>
+ <br>
+ <br>
   
   
   ## 3. Discussion.
   
   
- The  ![a](images/bmg.png) value is **xxx**. And since its above 0 more cases are expected in the future.
+ The  ![a](images/bmg.png) value is **0.390476**. And since its above 0 more cases are expected in the future.
   
  According to the above data,
  
- ![a](images/beta.png) = xxx <br>
- ![a](images/gamma.png) = xxx
+ ![a](images/beta.png) =    **0.390476** <br>
+ ![a](images/gamma.png) =   **0.000000**
  
  In the field of epidemiology the quantity ![a](images/bog.png) is known as the Basic reproduction number (![a](images/brn.png).
  
@@ -169,7 +224,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  
  As of today,
- ![a](images/brn.png) = **xxx**
+ ![a](images/brn.png) = **Theoretically Infinite**
 
 **The basic reproduction number is important in analyzing any pandemic/ epidemic situation. The goal of epidemiologists is to bring down this number below 1. When this number is below one an infected person is less likely to spread the disease to another person over the course of his infectious period.**
 
@@ -212,7 +267,23 @@ Susceptibility is the probability of a person catching the disease once the viru
 General public have almost no control over this. The only possible way to increase the recovery rate is to develop effective medicine to heal the patients. Also, this quantity automatically rises when more and more people are dying.
 
 
-***All the predictions and comments are based on the imformation publicly available on http://www.epid.gov.lk***
+
+## An additional method to predict when will the epidemic slow down
+
+The total number of reported cases (not the total active cases) exhibits a logistic nature. 
+
+![a](data/total.png)
+
+The gradient of total cases increases at first stays constant for a brief period and then decreases as the epidemic comes to an end.
+
+The point at which the gradient stays constant is the inflexion point of the graph. After this point, the gradient drops and the new cases being reported each day will decrease. 
+
+This inflexion point can be found by dividing consecutive gradient values. As the graph reaches its inflexion point, the gradient becomes a constant and the ratio between two consecutive gradient values becomes closer to one. This ratio is called the growth factor. As the growth factor reaches 1, the epidemic begins to diminish. By further observation, it is clear that roughly two times the number of infectives at the inflexion point becomes infected at the end of the epidemic. 
+
+![a](data/gf.png)
+
+
+***All the predictions and comments are based on the imformation publicly available on http://www.epid.gov.lk. Octave codes used to model the current COVID-19 outbreak in Sri Lanka are avalable in this repository.***
 
 
 ## References
@@ -226,7 +297,10 @@ General public have almost no control over this. The only possible way to increa
 [3] : Modelling Epidemics <br>
         https://jvanderw.une.edu.au/L5_ModellingEpidemics1.pdf
         
-[4] : Epidemiology Unit ,Ministry of Health & Indigenous Medical Services, Sri Lanka <br>
+[4] : Exponential growth and epidemics
+        https://www.youtube.com/watch?v=Kas0tIxDvrg
+        
+[5] : Epidemiology Unit ,Ministry of Health & Indigenous Medical Services, Sri Lanka <br>
         http://www.epid.gov.lk
 
 <br/>
