@@ -133,7 +133,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ![a](images/gamma.png) can be found. 
  
- ## Current situation as of 17/03/2020  12:00 HRS
+ ## Current situation as of 17/03/2020  21:30 HRS
  
  ### Plot of total confirmed cases in Sri Lanka
  
@@ -175,7 +175,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ![](data/I.png)
  
- #### ![a](images/bmg.png) = **0.390476**
+ #### ![a](images/bmg.png) = **0.365712**
  
  <br>
  <br>
@@ -211,11 +211,11 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
   ## 3. Discussion.
   
   
- The  ![a](images/bmg.png) value is **0.390476**. And since its above 0 more cases are expected in the future.
+ The  ![a](images/bmg.png) value is **0.365712**. And since its above 0 more cases are expected in the future.
   
  According to the above data,
  
- ![a](images/beta.png) =    **0.390476** <br>
+ ![a](images/beta.png) =    **0.365712** <br>
  ![a](images/gamma.png) =   **0.000000**
  
  In the field of epidemiology the quantity ![a](images/bog.png) is known as the Basic reproduction number (![a](images/brn.png).
