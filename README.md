@@ -133,7 +133,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ![a](images/gamma.png) can be found. 
  
- ## Current situation as of 17/03/2020
+ ## Current situation as of 17/03/2020  12:00 HRS
  
  ### Plot of total confirmed cases in Sri Lanka
  
