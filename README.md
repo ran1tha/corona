@@ -135,7 +135,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ## Current situation as of 17/03/2020
  
- ### Plot of confirmed cases in Sri Lanka
+ ### Plot of total confirmed cases in Sri Lanka
  
  ### Plot of active cases in Sri Lanka
  
@@ -145,7 +145,9 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ![a](images/bmg.png) = **xxx**
  
- ### Plot of ![a](https://latex.codecogs.com/png.latex?\dot{R}(t)) vs *I(t)* with best fit curve
+ ### Plot of recovered cases in Sri Lanka
+ 
+ ### Plot of ![a](images/rdot.png) vs *I(t)* with best fit curve
  
   ![a](images/gamma.png) = **xxx**
   
