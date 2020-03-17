@@ -23,7 +23,7 @@ The readme file of this repository has been divided into three parts.
 
 Epidemic diseases can be modelled using ordinary differential equations in several ways. The most common model is the **SIR** model. It assumes that the population size is fixed (i.e., no births, deaths due to disease, or deaths by natural causes), incubation period of the infectious agent is instantaneous, and duration of infectivity is same as length of the disease. It also assumes a completely homogeneous population with no age, spatial, or social structure.
 
-![SIR](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/SIR.PNG/600px-SIR.PNG) Image: Wikipedia
+![](images/SIR.png) Image: Wikipedia
 
 The total population is believed to be a constant as epidemics tend to have shorter time frames and thus the population variation can be negligible. This total population is then divided into three parts.
   1. Susceptibles - *S(t)*
@@ -37,35 +37,35 @@ The total population is believed to be a constant as epidemics tend to have shor
   
   #### *S(t)*
   
- In the case of an epidemic, the susceptible number of people drops at any given time. This is due to people falling sick. For the disease to spread a person from the infected group *I(t)* must come in contact with a person from the susceptible group *S(t)*. Thus the rate of susceptible people falling sick is proportional to *I(t)* and *S(t)*. It is also proportional to some proportionality constant   ![equation](https://latex.codecogs.com/png.latex?\beta) called the transmission coefficient. Now the rate of change of *S(t)* is given by, <br><br>
- ![a](https://latex.codecogs.com/png.latex?\dot{S(t)}=-\beta&space;S(t)I(t)) <br><br>
+ In the case of an epidemic, the susceptible number of people drops at any given time. This is due to people falling sick. For the disease to spread a person from the infected group *I(t)* must come in contact with a person from the susceptible group *S(t)*. Thus the rate of susceptible people falling sick is proportional to *I(t)* and *S(t)*. It is also proportional to some proportionality constant   ![](images/beta.png) called the transmission coefficient. Now the rate of change of *S(t)* is given by, <br><br>
+ ![](images/s1.png) <br><br>
  But, the dimensions of the rate of change of Susceptibles with time should be *people/time*. Therefore, to match the dimensions this rate should be divided by *N*, the total population. Note the minus sign is to imply the number of susceptibles drop over time. <br><br>
- ![a](https://latex.codecogs.com/png.latex?\dot{S(t)}=\frac{-\beta&space;S(t)I(t)}{N}) <br><br>
+ ![](images/s2.png) <br><br>
  
  
   #### *I(t)*
   
   In an epidemic, the number of infectives rise up exponentially and then rises linearly for a while before coming to a maximum while exhibiting logarithmic rise. Afterwards, the infectives decay to zero. Refer the image at the bottom of the section. The rate of change of *I(t)* is governed by two factors, the rate of susceptibles turning into infectives and the rate of infectives turning into recovered or simply, dying. 
-  The rate of infectives turning into reduced group solely depends on the number of infectives and hence it is proportional to *I(t)* along with a proportionality constant ![a](https://latex.codecogs.com/png.latex?\gamma) called the recovery rate. Now the rate of change of infectives is given by,
+  The rate of infectives turning into reduced group solely depends on the number of infectives and hence it is proportional to *I(t)* along with a proportionality constant ![a](images/gamma.png) called the recovery rate. Now the rate of change of infectives is given by,
   
-  ![a](https://latex.codecogs.com/png.latex?\dot{I(t)}&space;=&space;\frac{\beta&space;S(t)I(t)}{N}&space;-&space;\gamma&space;I(t))
+  ![a](images/i.png)
   
   
   #### *R(t)*
   
   The rate of recovery can be extracted from the above equation to be,
   
-  ![a](https://latex.codecogs.com/png.latex?\dot{R(t)}&space;=&space;\gamma&space;I(t))
+  ![a](images/r.png)
   
   Note that the sum of *S(t) + I(t) + R(t)* is *N*.
   
-  And the sum ![a](https://latex.codecogs.com/png.latex?\dot{S}(t)&plus;\dot{I}(t)&plus;\dot{R}(t)) is *0*.
+  And the sum ![a](images/n.png) is *0*.
   
   This means that the rate of change of *N*, population, with time is zero. The population is constant. (The reason behind assuming the population to be constant is because epidemics emerge and decay in a short time span and the population change is unnoticeable).
   
   By studying these 3 ordinary differential equations one can analyze and predict the future events of an epidemic. This system of quations is nonlinear and by solving the resultant functions *S(t), I(t), R(t)* can be plotted as below (minimum noise conditions),
   
-  ![a](https://www.researchgate.net/profile/C_Macal/publication/224209140/figure/fig1/AS:302881765904406@1449224048529/Typical-SIR-model-solution-showing-progression-of-population-disease-states-for.png) Image: ResearchGate
+  ![a](images/solved.png) Image: ResearchGate
   
   
   
@@ -77,23 +77,23 @@ The total population is believed to be a constant as epidemics tend to have shor
   
   The above **system of nonlinear ordinary differential equations** can be used to model the current situation of the COVID-19 outbreak in Sri Lanka. Here are the 3 equations again,
   
-  ![a](https://latex.codecogs.com/png.latex?\dot{S}(t)=\frac{-\beta&space;S(t)I(t)}{N})
+  ![a](images/s1.png)
   
-  ![a](https://latex.codecogs.com/png.latex?\dot{I}(t)&space;=&space;\frac{\beta&space;S(t)I(t)}{N}&space;-&space;\gamma&space;I(t))
+  ![a](images/i.png)
   
-  ![a](https://latex.codecogs.com/png.latex?\dot{R}(t)&space;=&space;\gamma&space;I(t))
+  ![a](images/r.png)
 
 The most important out of these three is the second equation because it deals with the rate of change of infectives.
 
- ![a](https://latex.codecogs.com/png.latex?\dot{I}(t)&space;=&space;\frac{\beta&space;S(t)I(t)}{N}&space;-&space;\gamma&space;I(t))
+ ![a](images/i.png)
 
 The total infective and reduced population in Sri Lanka is negligible compared to the susceptible population. Hence we can safely assume that *S(t) = N*. 
 
 Now the equation reduces to,
 
- ![a](https://latex.codecogs.com/png.latex?\dot{I}(t)&space;=&space;\beta&space;I(t)}&space;-&space;\gamma&space;I(t))
+ ![a](images/i2.png)
  
- ![a](https://latex.codecogs.com/gif.latex?\dot{I}(t)&space;=&space;(\beta&space;-&space;\gamma&space;)I(t))
+ ![a](images/i3.png)
  
  It is visible that the rate of change of infectives at any given moment is proportional to the present number of infectives.
  This discussion is continued after the following section.
@@ -103,13 +103,13 @@ Now the equation reduces to,
   
  Now it is important to pause for some time and pay attention to how *I(t)* behave in an epidemic situation. It was revealed earlier, by solving the system of nonlinear ordinary differential equations, *I(t)* behaves similar to a Boltzmann curve. The first half of the curve is a logistic curve. 
  
- ![a](https://epiville.ccnmtl.columbia.edu/assets/images/cholera.gif) Image: Epiville
+ ![a](images/normal.gif) Image: Epiville
  
  This trend is also visible by studying the plots of active cases in China and South Korea. 
  
  It is worthwhile to explore some properties of a Maxwell-Boltzmann (or normal distribution) curve. This curve exhibits logistic nature in the first half.
  
- ![a](https://www.researchgate.net/profile/Farid_Najafi/publication/268874045/figure/fig1/AS:295410389274629@1447442733860/Graph-of-the-Logistic-function-and-its-derivative-function.png) Image: ResearchGate
+ ![a](images/log.png) Image: ResearchGate
  
  In the beginning, the gradient of the curve rises up to some point where the gradient becomes instantaneously constant and at this point the graph instantaneously becomes linear. Next, the gradient gradually starts decreasing to zero. **We are only interested in this first-half of *I(t)* for now because the threat of the pandemic situation diminishes when *I(t)* reach the top of this logistic curve. Reaching the top of the logistic curve means that the number of active cases has reached its peak and now the active cases are beginning to drop.**
  
@@ -117,17 +117,17 @@ Now the equation reduces to,
  
 According to the current situation in Sri Lanka it was revealed earlier that the gradient of *I(t)* behaves according to,
 
-![a](https://latex.codecogs.com/gif.latex?\dot{I}(t)&space;=&space;(\beta&space;-&space;\gamma&space;)I(t))
+![a](images/i2.png)
 
 Which is linear.
 
-Using a simple Machine learning (Linear regression) algorithm an approximate value for ![a](https://latex.codecogs.com/png.latex?\beta&space;-&space;\gamma) can be found. This value should be 0 for *I(t)* to reach its peak. When ![a](https://latex.codecogs.com/png.latex?\beta&space;-&space;\gamma) < 0, *I(t)* starts decreasing.
+Using a simple Machine learning (Linear regression) algorithm an approximate value for ![a](images/bmg.png) can be found. This value should be 0 for *I(t)* to reach its peak. When ![a](images/bmg.png) < 0, *I(t)* starts decreasing.
  
  Similarly by running a similar algorithm on,
  
- ![a](https://latex.codecogs.com/png.latex?\dot{R}(t)&space;=&space;\gamma&space;I(t))
+ ![a](images/r.png)
  
- ![a](https://latex.codecogs.com/png.latex?\gamma) can be found. 
+ ![a](images/gamma.png) can be found. 
  
  ## Current situation as of 17/03/2020
  
@@ -139,37 +139,37 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ###  Plot of New cases vs Active cases with best fit curve
  
- ![a](https://latex.codecogs.com/png.latex?\beta&space;-&space;\gamma) = **xxx**
+ ![a](images/bmg.png) = **xxx**
  
  ### Plot of ![a](https://latex.codecogs.com/png.latex?\dot{R}(t)) vs *I(t)* with best fit curve
  
-  ![a](https://latex.codecogs.com/png.latex?\gamma) = **xxx**
+  ![a](images/gamma.png) = **xxx**
   
   
   
   ## 3. Discussion.
   
   
- The  ![a](https://latex.codecogs.com/png.latex?\beta&space;-&space;\gamma) value is **xxx**. And since its above 0 more cases are expected in the future.
+ The  ![a](images/bmg.png) value is **xxx**. And since its above 0 more cases are expected in the future.
   
  According to the above data,
  
- ![a](https://latex.codecogs.com/png.latex?\beta) = xxx <br>
- ![a](https://latex.codecogs.com/png.latex?\gamma) = xxx
+ ![a](images/beta.png) = xxx <br>
+ ![a](images/gamma.png) = xxx
  
- In the field of epidemiology the quantity ![a](https://latex.codecogs.com/png.latex?\frac{\beta&space;}{\gamma&space;}) is known as the Basic reproduction number (![a](https://latex.codecogs.com/png.latex?R_0)).
+ In the field of epidemiology the quantity ![a](images/bog.png) is known as the Basic reproduction number (![a](images/brn.png).
  
- ![a](https://latex.codecogs.com/png.latex?R_0)= the number of cases one case generates on average over the course of its infectious period, in an otherwise uninfected or not immune. Ref: European Respiratory Society- www.ersnet.org
+ ![a](images/brn.png)= the number of cases one case generates on average over the course of its infectious period, in an otherwise uninfected or not immune. Ref: European Respiratory Society- www.ersnet.org
  
  
  As of today,
- ![a](https://latex.codecogs.com/png.latex?R_0) = **xxx**
+ ![a](images/brn.png) = **xxx**
 
 **The basic reproduction number is important in analyzing any pandemic/ epidemic situation. The goal of epidemiologists is to bring down this number below 1. When this number is below one an infected person is less likely to spread the disease to another person over the course of his infectious period.**
 
 By bringing down the basic reproduction number, the total number of infected individuals can be dropped significantly.
 
-To decrease the basic reproduction number it is neccessary to decrease ![equation](https://latex.codecogs.com/png.latex?\beta) (transmission coefficient) and increase ![a](https://latex.codecogs.com/png.latex?\gamma) (recovery rate)
+To decrease the basic reproduction number it is neccessary to decrease ![equation](images/beta.png) (transmission coefficient) and increase ![a](images/gamma.png) (recovery rate)
 
 ### Decreasing the transmission coefficient
 
