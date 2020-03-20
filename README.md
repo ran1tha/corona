@@ -2,7 +2,7 @@
 
 [octave-5.1.0] <br>
 Originally Published On:  17/03/2020 <br>
-Last Updated On:          17/03/2020 <br>
+Last Updated On:          20/03/2020 <br>
 
 ## Introduction
 
@@ -133,7 +133,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ![a](images/gamma.png) can be found. 
  
- ## Current situation as of 17/03/2020  21:30 HRS
+ ## Current situation as of 20/03/2020  15:00 HRS
  
  ### Plot of total confirmed cases in Sri Lanka
  
@@ -175,7 +175,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ![](data/I.png)
  
- #### ![a](images/bmg.png) = **0.365712**
+ #### ![a](images/bmg.png) = **0.180048**
  
  <br>
  <br>
@@ -200,7 +200,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ![](data/r.png)
  
- #### ![a](images/gamma.png) = **0.000000**
+ #### ![a](images/gamma.png) = **0.007821**
  
  <br>
  <br>
@@ -211,12 +211,12 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
   ## 3. Discussion.
   
   
- The  ![a](images/bmg.png) value is **0.365712**. And since its above 0 more cases are expected in the future.
+ The  ![a](images/bmg.png) value is **0.180048**. And since its above 0 more cases are expected in the future.
   
  According to the above data,
  
- ![a](images/beta.png) =    **0.365712** <br>
- ![a](images/gamma.png) =   **0.000000**
+ ![a](images/beta.png) =    **0.18787** <br>
+ ![a](images/gamma.png) =   **0.007821**
  
  In the field of epidemiology the quantity ![a](images/bog.png) is known as the Basic reproduction number (![a](images/brn.png).
  
@@ -224,7 +224,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  
  As of today,
- ![a](images/brn.png) = **Theoretically Infinite**
+ ![a](images/brn.png) = **24.021**
 
 **The basic reproduction number is important in analyzing any pandemic/ epidemic situation. The goal of epidemiologists is to bring down this number below 1. When this number is below one an infected person is less likely to spread the disease to another person over the course of his infectious period.**
 
