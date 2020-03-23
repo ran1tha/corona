@@ -2,7 +2,7 @@
 
 [octave-5.1.0] <br>
 Originally Published On:  17/03/2020 <br>
-Last Updated On:          22/03/2020 <br>
+Last Updated On:          23/03/2020 <br>
 
 ## Introduction
 
@@ -133,7 +133,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ![a](images/gamma.png) can be found. 
  
- ## Current situation as of 22/03/2020  10:00 HRS
+ ## Current situation as of 23/03/2020  10:00 HRS
  
  ### Plot of total confirmed cases in Sri Lanka
  
@@ -175,7 +175,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ![](data/I.png)
  
- #### ![a](images/bmg.png) = **ँ0.166842**
+ #### ![a](images/bmg.png) = **0.150027**
  
  <br>
  <br>
@@ -211,11 +211,11 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
   ## 3. Discussion.
   
   
- The  ![a](images/bmg.png) value is **ँ0.166842**. And since its above 0 more cases are expected in the future.
+ The  ![a](images/bmg.png) value is **ँ0.150027**. And since its above 0 more cases are expected in the future.
   
  According to the above data,
  
- ![a](images/beta.png) =    **ँ0.166842** <br>
+ ![a](images/beta.png) =    **ँ0.150027** <br>
  ![a](images/gamma.png) =   **0.000000**
  
  In the field of epidemiology the quantity ![a](images/bog.png) is known as the Basic reproduction number (![a](images/brn.png).
@@ -278,7 +278,9 @@ The gradient of total cases increases at first stays constant for a brief period
 
 The point at which the gradient stays constant is the inflexion point of the graph. After this point, the gradient drops and the new cases being reported each day will decrease. 
 
-This inflexion point can be found by dividing consecutive gradient values. As the graph reaches its inflexion point, the gradient becomes a constant and the ratio between two consecutive gradient values becomes closer to one. This ratio is called the growth factor. As the growth factor reaches 1, the epidemic begins to diminish. By further observation, it is clear that roughly two times the number of infectives at the inflexion point becomes infected at the end of the epidemic. 
+This inflexion point can be found by dividing consecutive gradient values. As the graph reaches its inflexion point, the gradient becomes a constant and the ratio between two consecutive gradient values becomes closer to one. This ratio is called the growth factor. As the growth factor reaches 1, the epidemic begins to diminish. By further observation, it is clear that roughly two times the number of infectives at the inflexion point becomes infected at the end of the epidemic. <br>
+
+Generally the growth factor vs Days graph shows an oscillatory nature around 1.
 
 ![a](data/gf.png)
 
