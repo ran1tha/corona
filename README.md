@@ -4,7 +4,7 @@
 Originally Published On:  17/03/2020 <br>
 Last Updated On:          25/03/2020 <br>
 
-For a more advanced model with higher accuracy check out [my other repository!](github.com/ran1tha/corona2)<br>
+For a more advanced model with higher accuracy check out [my other repository!](https://github.com/ran1tha/corona2)<br>
 
 
 ## Introduction
