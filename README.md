@@ -4,6 +4,9 @@
 Originally Published On:  17/03/2020 <br>
 Last Updated On:          25/03/2020 <br>
 
+For a more advanced model with higher accuracy check out [my other repository!](github.com/ran1tha/corona2)<br>
+
+
 ## Introduction
 
 COVID-19 or 2019-nCoV is a novel (not seen before) coronavirus believed to be transferred to humans through bats. An outbreak of pneumonia of unknown reason was first reported on 31st December 2019 from Wuhan City in Hubei Province of China. On 7th Jan 2020, it was diagnosed as “Novel Corona Virus”. On 30th Jan 2020, World Health Organization has declared it as a Public Health Emergency of International Concern (PHEIC). On 11/02/2020 the WHO has introduced a short form for the diseases as COVID-19 and on 11/03/2020 declared as **pandemic**. (source: http://www.epid.gov.lk/)
