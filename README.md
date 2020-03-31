@@ -2,7 +2,7 @@
 
 [octave-5.1.0] <br>
 Originally Published On:  17/03/2020 <br>
-Last Updated On:          25/03/2020 <br>
+Last Updated On:          31/03/2020 <br>
 
 For a more advanced model with higher accuracy check out [my other repository!](https://github.com/ran1tha/corona2)<br>
 
@@ -136,7 +136,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ![a](images/gamma.png) can be found. 
  
- ## Current situation as of 25/03/2020  10:00 HRS
+ ## Current situation as of 31/03/2020  10:00 HRS
  
  ### Plot of total confirmed cases in Sri Lanka
  
@@ -178,7 +178,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ![](data/I.png)
  
- #### ![a](images/bmg.png) = **0.113786**
+ #### ![a](images/bmg.png) = **0.053992**
  
  <br>
  <br>
@@ -203,7 +203,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  ![](data/r.png)
  
- #### ![a](images/gamma.png) = **0.004122**
+ #### ![a](images/gamma.png) = **0.015763**
  
  <br>
  <br>
@@ -214,12 +214,12 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
   ## 3. Discussion.
   
   
- The  ![a](images/bmg.png) value is **ँ0.113786**. And since its above 0 more cases are expected in the future.
+ The  ![a](images/bmg.png) value is **0.053992**. And since its above 0 more cases are expected in the future.
   
  According to the above data,
  
- ![a](images/beta.png) =    **ँ0.11791** <br>
- ![a](images/gamma.png) =   **0.004122**
+ ![a](images/beta.png) =    **0.069755** <br>
+ ![a](images/gamma.png) =   **0.015763**
  
  In the field of epidemiology the quantity ![a](images/bog.png) is known as the Basic reproduction number (![a](images/brn.png).
  
@@ -227,7 +227,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  
  
  As of today,
- ![a](images/brn.png) = **28.605**
+ ![a](images/brn.png) = **4.42524**
 
 **The basic reproduction number is important in analyzing any pandemic/ epidemic situation. The goal of epidemiologists is to bring down this number below 1. When this number is below one an infected person is less likely to spread the disease to another person over the course of his infectious period.**
 
