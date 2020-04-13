@@ -185,7 +185,7 @@ Using a simple Machine learning (Linear regression) algorithm an approximate val
  <br>
  <br>
  
- ### Plot of recovered cases in Sri Lanka
+ ### Plot of reduced cases in Sri Lanka (Recovered + Dead)
  
  <br>
  <br>
